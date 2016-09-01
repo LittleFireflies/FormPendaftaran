@@ -1,16 +1,299 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="id.sch.smktelkom_mlg.tugas01.xiirpl1040.formpendaftaran.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo_ts" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo_ffmoklet" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Form Pendaftaran Anggota Baru \nFlag Football Moklet"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Kelas"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerKelas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Lahir"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etTgl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="tgl"
+                    android:inputType="numberSigned"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" - "
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etBulan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Bulan"
+                    android:inputType="numberSigned"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" - "
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etTahun"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:hint="Tahun"
+                    android:inputType="numberSigned"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sudah tahu Flag Football?"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgSB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rbSudah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sudah" />
+
+                    <RadioButton
+                        android:id="@+id/rbBelum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Belum" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tim yang ingin dimasuki"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cbOffense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Offense" />
+
+                    <CheckBox
+                        android:id="@+id/cbDefens"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Defense" />
+
+                    <CheckBox
+                        android:id="@+id/cbSpecial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Special Team" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:text="Alasan ingin ikut tim"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etAlasan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnProcess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Process" />
+
+            <LinearLayout
+                android:id="@+id/llHasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvHasil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hasil"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbAgree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dengan ini saya menyatakan bahwa data di atas benar dan setuju untuk mematuhi tata tertib dan tanggung jawab selama menjadi anggota tim Flag Football Moklet."
+                        android:textColor="@color/Black" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Register" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
