@@ -19,7 +19,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <ImageView
                     android:layout_width="0dp"
@@ -47,215 +48,221 @@
                 android:textAlignment="center"
                 android:textColor="@color/Black"
                 android:textSize="20sp" />
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="125dp"
-                    android:layout_height="wrap_content"
-                    android:text="Nama"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    android:text=":"
-                    android:textSize="18sp" />
-
-                <EditText
-                    android:id="@+id/etNama"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="125dp"
-                    android:layout_height="wrap_content"
-                    android:text="Kelas"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    android:text=":"
-                    android:textSize="18sp" />
-
-                <Spinner
-                    android:id="@+id/spinnerKelas"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"></Spinner>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="125dp"
-                    android:layout_height="wrap_content"
-                    android:text="Tanggal Lahir"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    android:text=":"
-                    android:textSize="18sp" />
-
-                <EditText
-                    android:id="@+id/etTgl"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:hint="tgl"
-                    android:inputType="numberSigned"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" - "
-                    android:textSize="18sp" />
-
-                <EditText
-                    android:id="@+id/etBulan"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:hint="Bulan"
-                    android:inputType="numberSigned"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" - "
-                    android:textSize="18sp" />
-
-                <EditText
-                    android:id="@+id/etTahun"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1.1"
-                    android:hint="Tahun"
-                    android:inputType="numberSigned"
-                    android:textAlignment="center" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="125dp"
-                    android:layout_height="wrap_content"
-                    android:text="Sudah tahu Flag Football?"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    android:text=":"
-                    android:textSize="18sp" />
-
-                <RadioGroup
-                    android:id="@+id/rgSB"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <RadioButton
-                        android:id="@+id/rbSudah"
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nama"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etNama"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Sudah" />
+                        android:inputType="text"
+                        android:textSize="18sp" />
+                </LinearLayout>
 
-                    <RadioButton
-                        android:id="@+id/rbBelum"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:text="Kelas"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerKelas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Lahir"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etTgl"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="tgl"
+                        android:inputType="numberSigned"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" - "
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etBulan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Bulan"
+                        android:inputType="numberSigned"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" - "
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etTahun"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:hint="Tahun"
+                        android:inputType="numberSigned"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sudah tahu Flag Football?"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textSize="18sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rgSB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rbSudah"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sudah" />
+
+                        <RadioButton
+                            android:id="@+id/rbBelum"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Belum" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tim yang ingin dimasuki"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Belum" />
-                </RadioGroup>
-            </LinearLayout>
+                        android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                        <CheckBox
+                            android:id="@+id/cbOffense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Offense" />
 
-                <TextView
-                    android:layout_width="125dp"
-                    android:layout_height="wrap_content"
-                    android:text="Tim yang ingin dimasuki"
-                    android:textSize="16sp" />
+                        <CheckBox
+                            android:id="@+id/cbDefense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Defense" />
 
-                <TextView
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    android:text=":"
-                    android:textSize="18sp" />
+                        <CheckBox
+                            android:id="@+id/cbSpecial"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Special Team" />
+                    </LinearLayout>
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
-                    <CheckBox
-                        android:id="@+id/cbOffense"
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:text="Alasan ingin ikut tim"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etAlasan"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Offense" />
-
-                    <CheckBox
-                        android:id="@+id/cbDefens"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Defense" />
-
-                    <CheckBox
-                        android:id="@+id/cbSpecial"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Special Team" />
+                        android:textSize="18sp" />
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnProcess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Process" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="125dp"
-                    android:layout_height="match_parent"
-                    android:text="Alasan ingin ikut tim"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    android:text=":"
-                    android:textSize="18sp" />
-
-                <EditText
-                    android:id="@+id/etAlasan"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/btnProcess"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Process" />
 
             <LinearLayout
                 android:id="@+id/llHasil"
@@ -265,12 +272,53 @@
                 android:visibility="gone">
 
                 <TextView
-                    android:id="@+id/tvHasil"
+                    android:id="@+id/tvHasilNama"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Hasil"
+                    android:text="Nama"
                     android:textSize="14sp" />
 
+                <TextView
+                    android:id="@+id/tvHasilKelas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kelas"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvHasilLahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TTL"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvHasilUmur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Umur"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvHasilSB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SB"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvHasilTim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tim"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvHasilAlasan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alasan"
+                    android:textSize="14sp" />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
