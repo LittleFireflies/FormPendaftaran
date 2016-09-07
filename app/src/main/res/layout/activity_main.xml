@@ -270,48 +270,149 @@
                 android:orientation="vertical"
                 android:visibility="gone">
 
-                <TextView
-                    android:id="@+id/tvHasilNama"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Nama"
-                    android:textSize="14sp" />
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tvHasilKelas"
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nama"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text=" : "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvHasilNama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nama"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Kelas"
-                    android:textSize="14sp" />
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tvHasilLahir"
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="Kelas"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text=" : "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvHasilKelas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kelas"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TTL"
-                    android:textSize="14sp" />
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tvHasilUmur"
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="TTL"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text=" : "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvHasilLahir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TTL"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Umur"
-                    android:textSize="14sp" />
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tvHasilTim"
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="Umur"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text=" : "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvHasilUmur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Umur"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Tim"
-                    android:textSize="14sp" />
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tvHasilAlasan"
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tim"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text=" : "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvHasilTim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tim"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Alasan"
-                    android:textSize="14sp" />
+                    android:layout_height="wrap_content">
 
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="Alasan"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text=" : "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvHasilAlasan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Alasan"
+                        android:textSize="14sp" />
+                </LinearLayout>
                 <TextView
                     android:id="@+id/tvHasilSB"
                     android:layout_width="match_parent"
@@ -329,7 +430,7 @@
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="80dp"
                         android:text="Dengan ini saya menyatakan bahwa data di atas benar dan setuju untuk mematuhi tata tertib dan tanggung jawab selama menjadi anggota tim Flag Football Moklet."
                         android:textColor="@color/Black" />
                 </LinearLayout>
@@ -339,8 +440,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
                     android:text="Register" />
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSukses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="SELAMAT, ANDA TELAH TERDAFTAR SEBAGAI ANGGOTA TIM FLAG FOOTBALL MOKLET"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                android:visibility="gone" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

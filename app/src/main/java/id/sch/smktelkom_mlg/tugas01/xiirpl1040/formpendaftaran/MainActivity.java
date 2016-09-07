@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     RadioButton SB_sudah, SB_belum;
     CheckBox offense, defense, special, setuju;
     Button proses, daftar;
-    TextView hasil_nama, hasil_kelas, hasil_ttl, hasil_umur, hasil_SB, hasil_tim, hasil_alasan;
+    TextView hasil_nama, hasil_kelas, hasil_ttl, hasil_umur, hasil_SB, hasil_tim, hasil_alasan, sukses;
     LinearLayout llHasil;
     List<String> list_kelas;
     ArrayAdapter<String> spinnerAdapter;
@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         hasil_SB = (TextView) findViewById(R.id.tvHasilSB);
         hasil_tim = (TextView) findViewById(R.id.tvHasilTim);
         hasil_alasan = (TextView) findViewById(R.id.tvHasilAlasan);
+        sukses = (TextView) findViewById(R.id.tvSukses);
         llHasil = (LinearLayout) findViewById(R.id.llHasil);
         setSpinnerEntries();
 
@@ -81,17 +82,46 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Anda belum memilih tim", Toast.LENGTH_SHORT).show();
                 } else {
                     llHasil.setVisibility(View.VISIBLE);
+                    llHasil.setFocusableInTouchMode(true);
                     llHasil.requestFocus();
-                    hasil_nama.setText("Nama     : " + nama.getText().toString());
-                    hasil_kelas.setText("Kelas    : " + kelas.getSelectedItem().toString());
-                    hasil_ttl.setText("Lahir    : " + tgl_lahir.getText().toString() + " - " + getMonth(bulan_lahir.getText().toString()) + " - " + tahun_lahir.getText().toString());
-                    hasil_umur.setText("Umur     : " + getYear(tahun_lahir.getText().toString()));
-                    hasil_tim.setText("Tim      : " + setTim());
-                    hasil_alasan.setText("Alasan   : " + alasan.getText().toString());
+                    hasil_nama.setText(nama.getText().toString());
+                    hasil_kelas.setText(kelas.getSelectedItem().toString());
+                    hasil_ttl.setText(tgl_lahir.getText().toString() + " - " + getMonth(bulan_lahir.getText().toString()) + " - " + tahun_lahir.getText().toString());
+                    hasil_umur.setText(getYear(tahun_lahir.getText().toString()));
+                    hasil_tim.setText(setTim());
+                    hasil_alasan.setText(alasan.getText().toString());
                     hasil_SB.setText(getSB() + " tahu olahraga Flag Football sebelumnya");
                 }
             }
         });
+
+        daftar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!setuju.isChecked()) {
+                    Toast.makeText(getApplicationContext(), "Anda belum mencentang tanda persetujuan", Toast.LENGTH_LONG).show();
+                } else {
+                    llHasil.setVisibility(View.GONE);
+                    sukses.setVisibility(View.VISIBLE);
+                    sukses.setFocusableInTouchMode(true);
+                    sukses.requestFocus();
+                    clearField();
+                }
+            }
+        });
+    }
+
+    private void clearField() {
+        nama.setText("");
+        kelas.setSelection(0);
+        tgl_lahir.setText("");
+        bulan_lahir.setText("");
+        tahun_lahir.setText("");
+        SB.clearCheck();
+        offense.setChecked(false);
+        defense.setChecked(false);
+        special.setChecked(false);
+        alasan.setText("");
     }
 
     public String getSB() {
@@ -118,30 +148,39 @@ public class MainActivity extends AppCompatActivity {
         String month = "";
         switch (bulan) {
             case "1":
+            case "01":
                 month = "Januari";
                 break;
             case "2":
+            case "02":
                 month = "Februari";
                 break;
             case "3":
+            case "03":
                 month = "Maret";
                 break;
             case "4":
+            case "04":
                 month = "April";
                 break;
             case "5":
+            case "05":
                 month = "Mei";
                 break;
             case "6":
+            case "06":
                 month = "Juni";
                 break;
             case "7":
+            case "07":
                 month = "Juli";
                 break;
             case "8":
+            case "08":
                 month = "Agustus";
                 break;
             case "9":
+            case "09":
                 month = "September";
                 break;
             case "10":
