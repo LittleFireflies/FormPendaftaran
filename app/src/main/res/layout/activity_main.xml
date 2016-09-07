@@ -121,6 +121,7 @@
                         android:layout_weight="1"
                         android:hint="tgl"
                         android:inputType="numberSigned"
+                        android:nextFocusDown="@+id/etBulan"
                         android:textAlignment="center" />
 
                     <TextView
@@ -136,6 +137,7 @@
                         android:layout_weight="1"
                         android:hint="Bulan"
                         android:inputType="numberSigned"
+                        android:nextFocusDown="@+id/etTahun"
                         android:textAlignment="center" />
 
                     <TextView
