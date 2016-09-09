@@ -12,6 +12,7 @@ Validasi kesalahan isian ada pada saat pengisian tanggal, dan bulan lahir dimana
 Selanjutnya bila button proses diklik, akan muncul textview yang menampilkan hasil dari inputan dan checkbox yang berfungsi sebagai validasi terakhir bahwa setuju untuk mengikuti tim Flag Football.
 
 Screenshot Aplikasi:
+
 ![1](https://github.com/LittleFireflies/FormPendaftaran/blob/master/1.jpg)
 ![2](https://github.com/LittleFireflies/FormPendaftaran/blob/master/2.jpg)
 ![3](https://github.com/LittleFireflies/FormPendaftaran/blob/master/3.jpg)
