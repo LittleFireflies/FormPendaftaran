@@ -8,6 +8,7 @@ Dalam Form ini, pengguna harus mengisikan :
 - Apakah sudah tahu olahraga flag football sebelumnya
 - Tim yang ingin dimasuki
 - Alasan ingin masuk tim Flag Football
+
 Validasi kesalahan isian ada pada saat pengisian tanggal, dan bulan lahir dimana harus sesuai. Selain itu semua field harus diisi, tidak boleh ada yang kosong.
 Selanjutnya bila button proses diklik, akan muncul textview yang menampilkan hasil dari inputan dan checkbox yang berfungsi sebagai validasi terakhir bahwa setuju untuk mengikuti tim Flag Football.
 
